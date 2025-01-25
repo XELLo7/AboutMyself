@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000; /* Black background */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect */
+    color: #00ff00; /* Bright green text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5); /* Green shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00; /* Bright green links */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* White color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    position: relative; /* Position relative for absolute child elements */
+    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    backdrop-filter: blur(15px); /* Stronger blur effect */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5); /* Green shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: -10px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    border-radius: 15px; /* Match the section's border radius */
+    background: rgba(0, 0, 0, 0.5); /* Darker shadow effect */
+    z-index: -1; /* Place behind the section */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8); /* Bright green shadow behind the border */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect */
+    color: #00ff00; /* Bright green text */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #00ff00; /* Bright green headings for contrast */
+}
+
+p {
+    color: #d0d0d0; /* Slightly lighter text for paragraphs */
+}
+
+img {
+    max-width: 100%; /* Responsive image */
+    border-radius: 15px; /* Rounded corners for images */
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.5); /* Green shadow for images */
+}
